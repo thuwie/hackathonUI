@@ -1,9 +1,10 @@
 <div class="row">
     <div class="col-md-6">
         <div style="display: block;">
-            <canvas baseChart width="400" height="400"
+            <canvas baseChart #baseChart="base-chart" width="450" height="200"
                     [datasets]="lineChartData"
                     [labels]="lineChartLabels"
+                    [legend]="lineChartLegend"
                     [options]="lineChartOptions"
                     [colors]="lineChartColors"
                     [chartType]="lineChartType"

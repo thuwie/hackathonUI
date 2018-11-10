@@ -2,9 +2,11 @@ import {Component, HostBinding, OnInit} from '@angular/core';
 import {trigger, state, style, animate, transition, keyframes, stagger} from "@angular/animations";
 import {ConnectorService} from "../connector.service";
 import {interval} from "rxjs";
+import {ChartComponent} from "../chart/chart.component";
 
 @Component({
     selector: 'app-pot',
+    providers: [ChartComponent],
     templateUrl: './pot.component.html',
     styleUrls: ['./pot.component.css'],
     animations: [trigger('visibilityChanged', [
@@ -32,7 +34,8 @@ export class PotComponent implements OnInit {
     public latestHistoryData: any = [];
     public latestVolumeData: any = [];
 
-    constructor(private connectorService: ConnectorService) {
+    constructor(private connectorService: ConnectorService,
+                private chartComponent: ChartComponent) {
         this.startWatch();
     }
 
@@ -71,6 +74,7 @@ export class PotComponent implements OnInit {
         this.connectorService.getLatestHistoryData(index).subscribe(historyData => {
             console.info('Update history for ' + index);
             this.latestHistoryData[index] = historyData;
+            this.chartComponent.updateChart(historyData);
         });
     }
 
