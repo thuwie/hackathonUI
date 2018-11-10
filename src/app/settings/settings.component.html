@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-11 text-right">
+        <div ngbDropdown class="d-inline-block" autoClose="false">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Settings</button>
+            <div ngbDropdownMenu placement="left" aria-labelledby="dropdownBasic1">
+                <ul>
+                    <li *ngFor="let toggler of togglers">
+                        <span (click)="clickEvent(toggler)">
+
+
+                        <i [ngClass]="toggler.status ? 'fas fa-toggle-on toggler-on' : 'fas fa-toggle-off toggler-off'">
+                        </i>
+                        </span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>

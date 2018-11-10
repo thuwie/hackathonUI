@@ -1,0 +1,19 @@
+<!--<div class="col" *ngFor="let pot of pots">-->
+<!--<div class="box">-->
+<!--Coffee pot {{ pot.id }} says {{ pot.status }}%-->
+<!--</div>-->
+<!--</div>-->
+
+<div class="box" [hidden]="!pots[0].visible">
+    Coffee pot {{ pots[0].id }} says {{ pots[0].status }}%
+</div>
+
+
+<div class="box" [hidden]="!pots[1].visible">
+    Coffee pot {{ pots[1].id }} says {{ pots[1].status }}%
+</div>
+
+
+<button type="button" class="btn btn-info" (click)="switch()">
+    add
+</button>

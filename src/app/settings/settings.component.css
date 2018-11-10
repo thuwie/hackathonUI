@@ -1,0 +1,19 @@
+.toggler-on {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    cursor: pointer;
+    color: green;
+}
+.toggler-off {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    cursor: pointer;
+    color: red;
+}
+
+body {
+
+    list-style-type: none;
+}

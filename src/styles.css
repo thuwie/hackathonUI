@@ -1,0 +1,14 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    overflow-x: hidden;
+    list-style-type: none;
+}
+
+.sidebar {
+    transition: all .3s;
+}
