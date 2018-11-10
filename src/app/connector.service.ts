@@ -7,12 +7,17 @@ import {environment} from '../environments/environment';
     providedIn: 'root'
 })
 export class ConnectorService {
+    private length: number = 10;
 
     constructor(private http: HttpClient) {
 
     }
 
-    public getStatus(id: string): Observable<any> {
-        return this.http.get(`${environment.apiUrl}/coffeeshot?id=${id}`);
+    public getLatestHistoryData(id: number): Observable<any> {
+        return this.http.get(`${environment.apiUrl}/coffeeshot?cameraId=${id}&count=${this.length}`);
     }
+    public getLatest(): Observable<any> {
+        return this.http.get(`${environment.apiUrl}/coffeeshot/latest`);
+    }
+
 }

@@ -1,3 +1,11 @@
 .box {
     border: 1px solid black;
+
+}
+.wave {
+    background: url("../../assets/img/wave.svg") repeat-x;
+    position: absolute;
+    top: -1px;
+    width: 6400px;
+    height: 198px;
 }

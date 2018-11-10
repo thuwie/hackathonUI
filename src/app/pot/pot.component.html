@@ -4,16 +4,31 @@
 <!--</div>-->
 <!--</div>-->
 
-<div class="box" [hidden]="!pots[0].visible">
-    Coffee pot {{ pots[0].id }} says {{ pots[0].status }}%
+<!--<div class="box" [hidden]="!pots[0].visible">-->
+<div class="container">
+    <div class="row">
+        <div class="col box position-absolute" [@visibilityChanged] *ngIf="potId===0">
+            <div [@move]="state" (@move.done)="onEnd($event)" class="wave">
+                <!--<img src="../../assets/img/wave.svg">-->
+            </div>
+            Coffee pot {{ pots[0].id }} says {{ pots[0].status }}%
+        </div>
+        <div class="col box position-absolute" [@visibilityChanged] *ngIf="potId===1">
+            <div [@move]="state" (@move.done)="onEnd($event)" class="wave">
+                <!--<img src="../../assets/img/wave.svg">-->
+            </div>
+            Coffee pot {{ pots[1].id }} says {{ pots[1].status }}%
+        </div>
+
+        <!--<div class="box" [@hideShowAnimator]="pots[1].status">-->
+        <!--Coffee pot {{ pots[1].id }} says {{ pots[1].status }}%-->
+        <!--</div>-->
+        <div class="row">
+            <div class="col-11">
+                <button type="button" class="btn btn-info" (click)="switch()">
+                    >
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-<div class="box" [hidden]="!pots[1].visible">
-    Coffee pot {{ pots[1].id }} says {{ pots[1].status }}%
-</div>
-
-
-<button type="button" class="btn btn-info" (click)="switch()">
-    add
-</button>
