@@ -84,6 +84,7 @@ public class CoffeeRepositoryCustomImpl implements CoffeeRepositoryCustom {
     public CoffeeShotMongo getLatest() {
         Query query = new Query();
         query.with(new Sort(Sort.Direction.DESC, "timestamp"));
+        query.addCriteria(Criteria.where("timestamp").lte(System.currentTimeMillis()));
         query.limit(1);
         return mongoTemplate.find(query, CoffeeShotMongo.class).get(0);
     }
