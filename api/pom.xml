@@ -24,6 +24,13 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -76,6 +83,13 @@
             <artifactId>reactor-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.petersamokhin</groupId>
+            <artifactId>vk-bot-java-sdk</artifactId>
+            <version>d0cc9564817dbaea2c0de9de5c2806fef4c8c8ca</version>
+        </dependency>
+
     </dependencies>
 
     <build>

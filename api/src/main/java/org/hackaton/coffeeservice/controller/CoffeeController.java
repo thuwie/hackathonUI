@@ -71,7 +71,7 @@ public class CoffeeController {
     }
 
     @GetMapping("/fakeGeneration")
-    public void fakeGeneration() throws Exception {
+    public void fakeGeneration() {
         long currentTimestamp = System.currentTimeMillis();
         long twoDays = 86400000;
         long oneMinute = 60000;
@@ -81,7 +81,7 @@ public class CoffeeController {
         double i = 1.0;
         double r;
         while (currentTimestamp < currentTimestamp + twoDays) {
-            double percent = Math.sin(i/8.0)/2.0 + 0.5;
+            double percent = Math.sin(i / 8.0) / 2.0 + 0.5;
 
             r = random.nextDouble() / 17;
             percent = Math.min(percent + r, 1.0);
