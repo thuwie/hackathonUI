@@ -1,5 +1,6 @@
 package org.hackaton.coffeeservice.controller;
 
+import org.hackaton.coffeeservice.bot.VKBot;
 import org.hackaton.coffeeservice.model.CoffeeShot;
 import org.hackaton.coffeeservice.model.CoffeeShotMongo;
 import org.hackaton.coffeeservice.repository.CoffeeRepository;
@@ -16,10 +17,18 @@ public class CoffeeController {
 
     private final CoffeeRepository coffeeRepository;
     private final CoffeeService coffeeService;
+    private final VKBot vkbot;
 
-    public CoffeeController(CoffeeRepository coffeeRepository, CoffeeService coffeeService) {
+    public CoffeeController(CoffeeRepository coffeeRepository, CoffeeService coffeeService, VKBot vkbot) {
         this.coffeeRepository = coffeeRepository;
         this.coffeeService = coffeeService;
+        this.vkbot = vkbot;
+    }
+
+    @GetMapping("/vkbot/notify")
+    public void notifyUserWhenCoffeePotIsReady(@RequestParam int vkUserId) {
+        String responseMessage = "Hi! I am coffeebot, you asked to norify you when the coffeepot is ready!";
+        vkbot.notifyUserOnFullCoffeePot(vkUserId, responseMessage);
     }
 
     @PostMapping("/coffeeshot")
