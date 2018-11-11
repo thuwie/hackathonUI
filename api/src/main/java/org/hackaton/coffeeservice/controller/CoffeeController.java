@@ -60,8 +60,8 @@ public class CoffeeController {
         return coffeeRepository.getHistory(cameraId, from, to);
     }
 
-    @GetMapping("/coffeeshots/predict")
-    public int getHistoryFromTimestamp(@RequestParam int cameraId) {
+    @GetMapping("/coffeeshot/predict")
+    public int getHistoryFromTimestamp(@RequestParam(defaultValue = "0") int cameraId) {
         return coffeeService.getFakePrediction(cameraId, System.currentTimeMillis());
     }
 

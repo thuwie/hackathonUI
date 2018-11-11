@@ -19,8 +19,9 @@ export class PredictorComponent implements OnInit {
     ngOnInit() {
         interval(5000).subscribe(() => {
             this.connectorService.getPrediction().subscribe(data => {
-                console.info('Predict', data);
-                this.indicators[data.index] = true;
+                for (let i = 0; i < 3; i++) {
+                    this.indicators[i].status = i === data;
+                }
             });
 
         });
