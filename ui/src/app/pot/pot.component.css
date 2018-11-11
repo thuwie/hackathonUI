@@ -1,0 +1,55 @@
+.box {
+    border: 1px solid black;
+
+}
+
+.wave {
+    background: url("../../assets/img/wave.svg") repeat-x;
+    position: absolute;
+    top: -1px;
+    width: 6400px;
+    height: 198px;
+}
+
+.coffee {
+    width: 40%;
+    height: 800px;
+    display: inline-block;
+    font-size: 0;
+    background-size: 100% auto;
+    background: url("../../assets/img/d1.png") no-repeat;
+    position: absolute;
+    top: 0;
+    right: 13%;
+
+}
+
+.machine {
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pot {
+    position: absolute;
+    height: 45vh;
+    width: 425px;
+    top: 43%;
+    left: -16.5%;
+}
+
+.pot-border {
+    z-index: 2;
+}
+.wave {
+    position:absolute;
+    z-index: 1;
+    top: 123px; /* 123 - 327*/
+    height: 30%;
+    width: 309px;
+    left: -7%;
+}
+
+.parent {
+    position: relative;
+}
