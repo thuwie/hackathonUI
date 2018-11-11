@@ -25,4 +25,8 @@ export class ConnectorService {
         return this.http.get(`${environment.apiUrl}/coffeeshot/predict`);
     }
 
+    public subscribeInVk(vkUserId: number): Observable<any> {
+        return this.http.get(`${environment.apiUrl}/vkbot/notify?vkUserId=${vkUserId}`);
+    }
+
 }

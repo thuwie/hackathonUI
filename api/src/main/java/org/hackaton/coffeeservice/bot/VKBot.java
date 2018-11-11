@@ -14,6 +14,10 @@ public class VKBot {
 
     public VKBot(CoffeeService coffeeService) {
         this.coffeeService = coffeeService;
+
+        // comment it since Cannot launch it on VK HOST - error with "access_token was given to another ip adderss"
+
+        /*
         this.group = new Group(17692504, "my_access_token");
 
         group.onSimpleTextMessage(message -> {
@@ -33,6 +37,7 @@ public class VKBot {
                 this.notifyUserOnFullCoffeePot(message.authorId(), "Great, I will notify you when the coffee pot is ready!");
             }
         });
+        */
     }
 
     public void notifyUserOnFullCoffeePot(Integer recipientId, String message) {
@@ -44,10 +49,12 @@ public class VKBot {
     }
 
     private void sendMessage(Integer recipientId, String message) {
-        new Message()
-                .from(group)
-                .to(recipientId)
-                .text(message)
-                .send();
+        if (this.group != null) {
+            new Message()
+                    .from(group)
+                    .to(recipientId)
+                    .text(message)
+                    .send();
+        }
     }
 }
