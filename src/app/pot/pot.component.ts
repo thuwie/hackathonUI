@@ -1,12 +1,14 @@
-import {Component, HostBinding, OnInit} from '@angular/core';
-import {trigger, state, style, animate, transition, keyframes, stagger} from "@angular/animations";
+import {Component, OnInit} from '@angular/core';
+import {trigger, state, style, animate, transition} from "@angular/animations";
 import {ConnectorService} from "../connector.service";
 import {interval} from "rxjs";
 import {ChartComponent} from "../chart/chart.component";
+import {PredictorComponent} from "../predictor/predictor.component";
+
 
 @Component({
     selector: 'app-pot',
-    providers: [ChartComponent],
+    providers: [ChartComponent, PredictorComponent],
     templateUrl: './pot.component.html',
     styleUrls: ['./pot.component.css'],
     animations: [trigger('visibilityChanged', [
@@ -28,9 +30,9 @@ import {ChartComponent} from "../chart/chart.component";
     ]
 })
 export class PotComponent implements OnInit {
-    private state = 'in';
     private pots: any = [];
-    private potId = 1;
+    private potId = 0;
+    private currentWave = '140px';
     public latestHistoryData: any = [];
     public latestVolumeData: any = [];
 
@@ -51,9 +53,6 @@ export class PotComponent implements OnInit {
             visible: false
         });
         this.latestVolumeData = [{}, {}];
-        // setTimeout(() => {
-        //     this.state = 'out';
-        // }, 0);
     }
 
     private startWatch(): void {
@@ -64,6 +63,8 @@ export class PotComponent implements OnInit {
                 if (this.latestVolumeData[id].timestamp !== data.timestamp) {
                     this.latestVolumeData[id] = data;
                     this.pots[id].status = Math.round(data.percent * 100);
+                    this.currentWave = `${((100 - this.pots[id].status) * 1.5 + 143)}px`;
+                    console.info(this.currentWave);
                     this.updateHistory(id);
                 }
             });
@@ -84,15 +85,6 @@ export class PotComponent implements OnInit {
         this.pots.map(pot => {
             pot.visible = !pot.visible;
         });
-    }
-
-    onEnd(event) {
-        this.state = 'in';
-        if (event.toState === 'in') {
-            setTimeout(() => {
-                this.state = 'out';
-            }, 0);
-        }
     }
 
 }

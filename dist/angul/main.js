@@ -303,54 +303,6 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/animations.ts":
-/*!*******************************!*\
-  !*** ./src/app/animations.ts ***!
-  \*******************************/
-/*! exports provided: SlideInOutAnimation */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlideInOutAnimation", function() { return SlideInOutAnimation; });
-/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
-
-var SlideInOutAnimation = [
-    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["trigger"])('slideInOut', [
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["state"])('in', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
-            'max-height': '500px', 'opacity': '1', 'visibility': 'visible'
-        })),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["state"])('out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
-            'max-height': '0px', 'opacity': '0', 'visibility': 'hidden'
-        })),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["transition"])('in => out', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["group"])([
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('400ms ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
-                    'opacity': '0'
-                })),
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('600ms ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
-                    'max-height': '0px'
-                })),
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('700ms ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
-                    'visibility': 'hidden'
-                }))
-            ])]),
-        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["transition"])('out => in', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["group"])([
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('1ms ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
-                    'visibility': 'visible'
-                })),
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('600ms ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
-                    'max-height': '500px'
-                })),
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('800ms ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({
-                    'opacity': '1'
-                }))
-            ])])
-    ]),
-];
-
-
-/***/ }),
-
 /***/ "./src/app/app.component.css":
 /*!***********************************!*\
   !*** ./src/app/app.component.css ***!
@@ -358,7 +310,7 @@ var SlideInOutAnimation = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".body {\r\n    max-width: 1500 px;\r\n    margin: 0 auto;\r\n    font-size:0;\r\n    font-family: Muller, Myriad Pro, Calibri, serif;\r\n\r\n    background-size: 100% 100%;\r\n    font-weight: normal;\r\n\r\n}\r\n\r\n.bg{\r\n    width: 100wh;\r\n    height: 100vh;\r\n    background-size: auto 100%;\r\n    background: url('fon1.jpg') repeat-x;\r\n}\r\n\r\n.colored-header {\r\n    width: 100%;\r\n    height: 100px;\r\n    margin: 0;\r\n    background-color: #4a1a82;\r\n}\r\n\r\n.container-full {\r\n    margin: 0 auto;\r\n    height: 100px;\r\n    background-color: #4a1a82\r\n}\r\n\r\n.logo {\r\n    height: 45px;\r\n    font-size: 0;\r\n    margin-top: 30px;\r\n}\r\n\r\n.settings {\r\n    margin-top: 30px;\r\n}"
+module.exports = "@import url('https://fonts.googleapis.com/css?family=Nunito');\r\n.body {\r\n    max-width: 1500px;\r\n    margin: 0 auto;\r\n    background-size: 100% 100%;\r\n    font-weight: normal;\r\n    overflow-y: hidden;\r\n}\r\n.h5 {\r\n    color: #ffffff;\r\n    font-size: 20px;\r\n}\r\n.bg {\r\n    width: 100vw;\r\n    height: 150vh;\r\n    background-size: auto 120%;\r\n    background: url('fon1.jpg') repeat-x;\r\n}\r\n.colored-header {\r\n    width: 100%;\r\n    height: 100px;\r\n    margin: 0;\r\n    opacity: 0.5;\r\n    background-color: #4a1a82;\r\n}\r\n.white-text {\r\n    color: white;\r\n    margin-left: 9px;\r\n    font-family: Nunito, serif;\r\n    font-size: 13.5px;\r\n    margin-bottom: 25px;\r\n}\r\n.container-full {\r\n    padding: 0;\r\n}\r\n.top-buffer {\r\n    margin-top: 50px;\r\n}\r\n.bot-buffer {\r\n    margin-bot: 50px;\r\n}\r\n.row-full {\r\n    padding: 0 0 20px 0;\r\n    margin: 0;\r\n}\r\n.logo {\r\n    height: 100px;\r\n    font-size: 0;\r\n    margin-top: 30px;\r\n}\r\n.text {\r\n    margin-top: 102px;\r\n    margin-right: 250px;\r\n}\r\n.settings {\r\n    margin-top: 94px;\r\n    margin-right: 5px;\r\n}\r\n\r\n"
 
 /***/ }),
 
@@ -369,7 +321,7 @@ module.exports = ".body {\r\n    max-width: 1500 px;\r\n    margin: 0 auto;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.5.0/css/all.css\"\r\n      integrity=\"sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU\" crossorigin=\"anonymous\">\r\n<script src=\"node_modules/chart.js/src/chart.js\"></script>\r\n<body class=\"bg\">\r\n<div class=\"container-fluid container-full\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-10 col-sm offset-md-1\">\r\n            <img src=\"../assets/img/logo.png\" class=\"logo\">\r\n        </div>\r\n        <div class=\"col-md-10 col-sm offset-md-3\" class=\"settings\">\r\n            <app-settings></app-settings>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col\">\r\n\r\n        </div>\r\n    </div>\r\n</div>\r\n<!--<div class=\"container\">-->\r\n    <!--<div class=\"row justify-content-md-center\">-->\r\n        <!--<div class=\"col col-lg-3\">-->\r\n            <!--<app-pot></app-pot>-->\r\n        <!--</div>-->\r\n    <!--</div>-->\r\n    <!--<div class=\"row justify-content-md-center\">-->\r\n    <!--<div class=\"col col-lg 3\">-->\r\n    <!--<app-chart></app-chart>-->\r\n    <!--</div>-->\r\n    <!--</div>-->\r\n<!--</div>-->\r\n</body>\r\n"
+module.exports = "<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.5.0/css/all.css\"\r\n      integrity=\"sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU\" crossorigin=\"anonymous\">\r\n<script src=\"node_modules/chart.js/src/chart.js\"></script>\r\n<body class=\"bg\">\r\n<div class=\"container-fluid container-full\">\r\n    <div class=\"row row-full\">\r\n        <div class=\"col-md-1 col-sm offset-md-2\">\r\n            <img src=\"../assets/img/logo.png\" class=\"logo\">\r\n        </div>\r\n        <div class=\"col-md-4 offset-md-1 text\">\r\n            <h5 class=\"white-text\">Your time is valuable and you know it. Don't waste it on the coffee-machine walk but\r\n                cast The Coffee to get Product Over Time</h5>\r\n        </div>\r\n        <div class=\"col\" class=\"settings\">\r\n            <app-vk></app-vk>\r\n        </div>\r\n        <div class=\"col\" class=\"settings\">\r\n            <app-settings></app-settings>\r\n        </div>\r\n    </div>\r\n    <div class=\"row justify-content-center top-buffer\">\r\n\r\n        <div class=\"col-md-8\">\r\n            <app-predictor></app-predictor>\r\n        </div>\r\n        <div class=\"col\">\r\n            <div class=\"pot\">\r\n                <app-pot></app-pot>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n    <!--<div class=\"row top-buffer\">-->\r\n    <!--<div class=\"col-md-1\">-->\r\n    <!--<app-chart></app-chart>-->\r\n    <!--</div>-->\r\n</div>\r\n</body>\r\n"
 
 /***/ }),
 
@@ -384,7 +336,6 @@ module.exports = "<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/re
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./animations */ "./src/app/animations.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -392,25 +343,15 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
-
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'angul';
-        this.animationState = 'in';
+        this.title = 'CoffeePot';
     }
-    AppComponent.prototype.toggleShowDiv = function (divName) {
-        if (divName === 'divA') {
-            console.log(this.animationState);
-            this.animationState = this.animationState === 'out' ? 'in' : 'out';
-            console.log(this.animationState);
-        }
-    };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
-            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")],
-            animations: [_animations__WEBPACK_IMPORTED_MODULE_1__["SlideInOutAnimation"]]
+            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
         })
     ], AppComponent);
     return AppComponent;
@@ -435,17 +376,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
-/* harmony import */ var ng2_charts_x__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng2-charts-x */ "./node_modules/ng2-charts-x/index.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _pot_pot_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pot/pot.component */ "./src/app/pot/pot.component.ts");
-/* harmony import */ var _settings_settings_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./settings/settings.component */ "./src/app/settings/settings.component.ts");
-/* harmony import */ var _chart_chart_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./chart/chart.component */ "./src/app/chart/chart.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _pot_pot_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pot/pot.component */ "./src/app/pot/pot.component.ts");
+/* harmony import */ var _settings_settings_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./settings/settings.component */ "./src/app/settings/settings.component.ts");
+/* harmony import */ var _chart_chart_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./chart/chart.component */ "./src/app/chart/chart.component.ts");
+/* harmony import */ var _vk_vk_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./vk/vk.component */ "./src/app/vk/vk.component.ts");
+/* harmony import */ var _predictor_predictor_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./predictor/predictor.component */ "./src/app/predictor/predictor.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -463,16 +406,17 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-                _pot_pot_component__WEBPACK_IMPORTED_MODULE_7__["PotComponent"],
-                _settings_settings_component__WEBPACK_IMPORTED_MODULE_8__["SettingsComponent"],
-                _chart_chart_component__WEBPACK_IMPORTED_MODULE_9__["ChartComponent"]
+                _pot_pot_component__WEBPACK_IMPORTED_MODULE_6__["PotComponent"],
+                _settings_settings_component__WEBPACK_IMPORTED_MODULE_7__["SettingsComponent"],
+                _chart_chart_component__WEBPACK_IMPORTED_MODULE_8__["ChartComponent"],
+                _vk_vk_component__WEBPACK_IMPORTED_MODULE_9__["VkComponent"],
+                _predictor_predictor_component__WEBPACK_IMPORTED_MODULE_10__["PredictorComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
                 _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"].forRoot(),
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"],
-                ng2_charts_x__WEBPACK_IMPORTED_MODULE_5__["ChartsModule"]
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
@@ -503,7 +447,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n    <div class=\"col-md-6\">\n        <div style=\"display: block;\">\n            <canvas baseChart #baseChart=\"base-chart\" width=\"450\" height=\"200\"\n                    [datasets]=\"lineChartData\"\n                    [labels]=\"lineChartLabels\"\n                    [legend]=\"lineChartLegend\"\n                    [options]=\"lineChartOptions\"\n                    [colors]=\"lineChartColors\"\n                    [chartType]=\"lineChartType\"\n                    (chartHover)=\"chartHovered($event)\"\n                    (chartClick)=\"chartClicked($event)\"></canvas>\n        </div>\n    </div>\n</div>"
+module.exports = "<div>\n    <img src=\"../../assets/img/graph.gif\">\n</div>"
 
 /***/ }),
 
@@ -532,7 +476,6 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var ChartComponent = /** @class */ (function () {
     function ChartComponent() {
-        this.ChartData = [{ data: 0, label: 'X' }];
         this.lineChartData = [
             { data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], label: 'Coffee' }
         ];
@@ -630,6 +573,9 @@ var ConnectorService = /** @class */ (function () {
     ConnectorService.prototype.getLatest = function () {
         return this.http.get(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].apiUrl + "/coffeeshot/latest");
     };
+    ConnectorService.prototype.getPrediction = function () {
+        return this.http.get(_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].apiUrl + "/coffeeshot/predict");
+    };
     ConnectorService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
@@ -650,7 +596,7 @@ var ConnectorService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".box {\r\n    border: 1px solid black;\r\n\r\n}\r\n\r\n.wave {\r\n    background: url(\"data:image/svg+xml,%3C%3Fxml version%3D%221.0%22 encoding%3D%22utf-8%22%3F%3E%0D%3C!-- Generator%3A Adobe Illustrator 22.0.0%2C SVG Export Plug-In . SVG Version%3A 6.00 Build 0)  --%3E%0D%3Csvg version%3D%221.1%22 id%3D%22%D0%A1%D0%BB%D0%BE%D0%B9_1%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22 x%3D%220px%22 y%3D%220px%22%0D%09 viewBox%3D%220 0 2638.2 643.5%22 style%3D%22enable-background%3Anew 0 0 2638.2 643.5%3B%22 xml%3Aspace%3D%22preserve%22%3E%0D%3Cstyle type%3D%22text%2Fcss%22%3E%0D%09.st0%7Bfill%3Aurl(%23SVGID_1_)%3B%7D%0D%3C%2Fstyle%3E%0D%3ClinearGradient id%3D%22SVGID_1_%22 gradientUnits%3D%22userSpaceOnUse%22 x1%3D%221318.8077%22 y1%3D%22631.7308%22 x2%3D%221318.8077%22 y2%3D%226.1538%22%3E%0D%09%3Cstop  offset%3D%223.968254e-03%22 style%3D%22stop-color%3A%23F89207%22%2F%3E%0D%09%3Cstop  offset%3D%220.5159%22 style%3D%22stop-color%3A%23E71E5F%3Bstop-opacity%3A0.7%22%2F%3E%0D%09%3Cstop  offset%3D%220.5983%22 style%3D%22stop-color%3A%23DD1B61%3Bstop-opacity%3A0.5808%22%2F%3E%0D%09%3Cstop  offset%3D%220.7408%22 style%3D%22stop-color%3A%23C11366%3Bstop-opacity%3A0.3748%22%2F%3E%0D%09%3Cstop  offset%3D%220.925%22 style%3D%22stop-color%3A%2393066D%3Bstop-opacity%3A0.1085%22%2F%3E%0D%09%3Cstop  offset%3D%221%22 style%3D%22stop-color%3A%237F0071%3Bstop-opacity%3A0%22%2F%3E%0D%3C%2FlinearGradient%3E%0D%3Cpath class%3D%22st0%22 d%3D%22M2637.8%2C643.3H-0.2v-503c508-19%2C823-142%2C1319-142s834%2C142%2C1319%2C142%22%2F%3E%0D%3C%2Fsvg%3E%0D\") repeat-x;\r\n    position: absolute;\r\n    top: -1px;\r\n    width: 6400px;\r\n    height: 198px;\r\n}\r\n\r\n.coffee {\r\n    width: 40%;\r\n    height: 800px;\r\n    display: inline-block;\r\n    font-size: 0;\r\n    background-size: 100% auto;\r\n    background: url('d1.png') no-repeat;\r\n    position: absolute;\r\n    top: 0;\r\n    right: 13%;\r\n\r\n}"
+module.exports = ".box {\r\n    border: 1px solid black;\r\n\r\n}\r\n\r\n.wave {\r\n    background: url(\"data:image/svg+xml,%3C%3Fxml version%3D%221.0%22 encoding%3D%22utf-8%22%3F%3E%0D%3C!-- Generator%3A Adobe Illustrator 22.0.0%2C SVG Export Plug-In . SVG Version%3A 6.00 Build 0)  --%3E%0D%3Csvg version%3D%221.1%22 id%3D%22%D0%A1%D0%BB%D0%BE%D0%B9_1%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22 x%3D%220px%22 y%3D%220px%22%0D%09 viewBox%3D%220 0 2638.2 643.5%22 style%3D%22enable-background%3Anew 0 0 2638.2 643.5%3B%22 xml%3Aspace%3D%22preserve%22%3E%0D%3Cstyle type%3D%22text%2Fcss%22%3E%0D%09.st0%7Bfill%3Aurl(%23SVGID_1_)%3B%7D%0D%3C%2Fstyle%3E%0D%3ClinearGradient id%3D%22SVGID_1_%22 gradientUnits%3D%22userSpaceOnUse%22 x1%3D%221318.8077%22 y1%3D%22631.7308%22 x2%3D%221318.8077%22 y2%3D%226.1538%22%3E%0D%09%3Cstop  offset%3D%223.968254e-03%22 style%3D%22stop-color%3A%23F89207%22%2F%3E%0D%09%3Cstop  offset%3D%220.5159%22 style%3D%22stop-color%3A%23E71E5F%3Bstop-opacity%3A0.7%22%2F%3E%0D%09%3Cstop  offset%3D%220.5983%22 style%3D%22stop-color%3A%23DD1B61%3Bstop-opacity%3A0.5808%22%2F%3E%0D%09%3Cstop  offset%3D%220.7408%22 style%3D%22stop-color%3A%23C11366%3Bstop-opacity%3A0.3748%22%2F%3E%0D%09%3Cstop  offset%3D%220.925%22 style%3D%22stop-color%3A%2393066D%3Bstop-opacity%3A0.1085%22%2F%3E%0D%09%3Cstop  offset%3D%221%22 style%3D%22stop-color%3A%237F0071%3Bstop-opacity%3A0%22%2F%3E%0D%3C%2FlinearGradient%3E%0D%3Cpath class%3D%22st0%22 d%3D%22M2637.8%2C643.3H-0.2v-503c508-19%2C823-142%2C1319-142s834%2C142%2C1319%2C142%22%2F%3E%0D%3C%2Fsvg%3E%0D\") repeat-x;\r\n    position: absolute;\r\n    top: -1px;\r\n    width: 6400px;\r\n    height: 198px;\r\n}\r\n\r\n.coffee {\r\n    width: 40%;\r\n    height: 800px;\r\n    display: inline-block;\r\n    font-size: 0;\r\n    background-size: 100% auto;\r\n    background: url('d1.png') no-repeat;\r\n    position: absolute;\r\n    top: 0;\r\n    right: 13%;\r\n\r\n}\r\n\r\n.machine {\r\n    height: 40vh;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n}\r\n\r\n.pot {\r\n    position: absolute;\r\n    height: 45vh;\r\n    width: 425px;\r\n    top: 43%;\r\n    left: -16.5%;\r\n}\r\n\r\n.pot-border {\r\n    z-index: 2;\r\n}\r\n\r\n.wave {\r\n    position:absolute;\r\n    z-index: 1;\r\n    top: 123px; /* 123 - 327*/\r\n    height: 30%;\r\n    width: 309px;\r\n    left: -7%;\r\n}\r\n\r\n.parent {\r\n    position: relative;\r\n}"
 
 /***/ }),
 
@@ -661,7 +607,7 @@ module.exports = ".box {\r\n    border: 1px solid black;\r\n\r\n}\r\n\r\n.wave {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col coffee position-absolute\" [@visibilityChanged] *ngIf=\"potId===0\">\n            <div [@move]=\"state\" (@move.done)=\"onEnd($event)\" class=\"wave\">\n                <!--<img src=\"../../assets/img/wave.svg\">-->\n            </div>\n            Coffee pot {{ pots[0].id }} says {{ pots[0].status }}%\n        </div>\n        <div class=\"col box position-absolute\" [@visibilityChanged] *ngIf=\"potId===1\">\n            <div [@move]=\"state\" (@move.done)=\"onEnd($event)\" class=\"wave\">\n                <!--<img src=\"../../assets/img/wave.svg\">-->\n            </div>\n            Coffee pot {{ pots[1].id }} says {{ pots[1].status }}%\n        </div>\n\n        <div class=\"row\">\n            <div class=\"col-11\">\n                <button type=\"button\" class=\"btn btn-info\" (click)=\"switch()\">\n                    >\n                </button>\n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"container\">\n    <div class=\"row\">\n        <img class=\"wave\" src=\"../../assets/img/wave_anim.gif\"\n             [ngStyle]=\"{'top':this.currentWave}\">\n        <img class=\"pot\" src=\"../../assets/img/coffee2.png\">\n    </div>\n</div>"
 
 /***/ }),
 
@@ -680,6 +626,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _connector_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../connector.service */ "./src/app/connector.service.ts");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 /* harmony import */ var _chart_chart_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../chart/chart.component */ "./src/app/chart/chart.component.ts");
+/* harmony import */ var _predictor_predictor_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../predictor/predictor.component */ "./src/app/predictor/predictor.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -694,13 +641,14 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var PotComponent = /** @class */ (function () {
     function PotComponent(connectorService, chartComponent) {
         this.connectorService = connectorService;
         this.chartComponent = chartComponent;
-        this.state = 'in';
         this.pots = [];
-        this.potId = 1;
+        this.potId = 0;
+        this.currentWave = '140px';
         this.latestHistoryData = [];
         this.latestVolumeData = [];
         this.startWatch();
@@ -717,9 +665,6 @@ var PotComponent = /** @class */ (function () {
             visible: false
         });
         this.latestVolumeData = [{}, {}];
-        // setTimeout(() => {
-        //     this.state = 'out';
-        // }, 0);
     };
     PotComponent.prototype.startWatch = function () {
         var _this = this;
@@ -730,6 +675,8 @@ var PotComponent = /** @class */ (function () {
                 if (_this.latestVolumeData[id].timestamp !== data.timestamp) {
                     _this.latestVolumeData[id] = data;
                     _this.pots[id].status = Math.round(data.percent * 100);
+                    _this.currentWave = ((100 - _this.pots[id].status) * 1.5 + 143) + "px";
+                    console.info(_this.currentWave);
                     _this.updateHistory(id);
                 }
             });
@@ -749,19 +696,10 @@ var PotComponent = /** @class */ (function () {
             pot.visible = !pot.visible;
         });
     };
-    PotComponent.prototype.onEnd = function (event) {
-        var _this = this;
-        this.state = 'in';
-        if (event.toState === 'in') {
-            setTimeout(function () {
-                _this.state = 'out';
-            }, 0);
-        }
-    };
     PotComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-pot',
-            providers: [_chart_chart_component__WEBPACK_IMPORTED_MODULE_4__["ChartComponent"]],
+            providers: [_chart_chart_component__WEBPACK_IMPORTED_MODULE_4__["ChartComponent"], _predictor_predictor_component__WEBPACK_IMPORTED_MODULE_5__["PredictorComponent"]],
             template: __webpack_require__(/*! ./pot.component.html */ "./src/app/pot/pot.component.html"),
             styles: [__webpack_require__(/*! ./pot.component.css */ "./src/app/pot/pot.component.css")],
             animations: [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('visibilityChanged', [
@@ -792,6 +730,85 @@ var PotComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/predictor/predictor.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/predictor/predictor.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".indicator {\r\n    height: 90px;\r\n    margin: 0 0 0 234px;\r\n}\r\n\r\n.white-text {\r\n    color: white;\r\n    margin-left: 9px;\r\n    font-family: Nunito, serif;\r\n    font-size: 26px;\r\n    margin-bottom: 25px;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/predictor/predictor.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/predictor/predictor.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row bot-buffer\">\n    <div class=\"col-md-6 offset-md-3\">\n        <h5 class=\"white-text\">the best time for cup of coffee</h5>\n    </div>\n</div>\n<div class=\"row top-buffer\">\n    <div class=\"col-md-2\">\n        <img class=\"indicator\" [src]=\"indicators[0].status ? '../../assets/img/im1_d.png' : '../../assets/img/im1.png'\">\n    </div>\n    <div class=\"col-md-2\">\n        <img class=\"indicator\" [src]=\"indicators[1].status ? '../../assets/img/im2_d.png' : '../../assets/img/im2.png'\">\n    </div>\n    <div class=\"col-md-2\">\n        <img class=\"indicator\" [src]=\"indicators[2].status ? '../../assets/img/im3_d.png' : '../../assets/img/im3.png'\">\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/predictor/predictor.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/predictor/predictor.component.ts ***!
+  \**************************************************/
+/*! exports provided: PredictorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PredictorComponent", function() { return PredictorComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _connector_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../connector.service */ "./src/app/connector.service.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PredictorComponent = /** @class */ (function () {
+    function PredictorComponent(connectorService) {
+        this.connectorService = connectorService;
+        this.indicators = [];
+        this.indicators.push({ status: true });
+        this.indicators.push({ status: false });
+        this.indicators.push({ status: false });
+    }
+    PredictorComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["interval"])(5000).subscribe(function () {
+            _this.connectorService.getPrediction().subscribe(function (data) {
+                console.info('Predict', data);
+                _this.indicators[data.index] = true;
+            });
+        });
+    };
+    PredictorComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-predictor',
+            template: __webpack_require__(/*! ./predictor.component.html */ "./src/app/predictor/predictor.component.html"),
+            styles: [__webpack_require__(/*! ./predictor.component.css */ "./src/app/predictor/predictor.component.css")]
+        }),
+        __metadata("design:paramtypes", [_connector_service__WEBPACK_IMPORTED_MODULE_1__["ConnectorService"]])
+    ], PredictorComponent);
+    return PredictorComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/settings/settings.component.css":
 /*!*************************************************!*\
   !*** ./src/app/settings/settings.component.css ***!
@@ -810,7 +827,7 @@ module.exports = ".toggler-on {\r\n    text-align: center;\r\n    margin: 0 auto
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div ngbDropdown class=\"d-inline-block\" autoClose=\"false\">\n    <button class=\"btn btn-outline-primary\" id=\"dropdownBasic1\" ngbDropdownToggle><i class=\"fa fa-cog\"></i></button>\n    <div ngbDropdownMenu placement=\"left\" aria-labelledby=\"dropdownBasic1\">\n        <ul>\n            <li *ngFor=\"let toggler of togglers\">\n                        <span (click)=\"clickEvent(toggler)\">\n\n\n                        <i [ngClass]=\"toggler.status ? 'fas fa-toggle-on toggler-on' : 'fas fa-toggle-off toggler-off'\">\n                        </i>\n                        </span>\n            </li>\n        </ul>\n\n    </div>\n</div>\n"
+module.exports = "<div ngbDropdown class=\"d-inline-block\" autoClose=\"false\">\n    <button class=\"btn btn-outline-primary\" id=\"dropdownBasic1\" ngbDropdownToggle><i class=\"fa fa-cog\"></i></button>\n    <div ngbDropdownMenu placement=\"left\" aria-labelledby=\"dropdownBasic1\">\n        <ul>\n            <span *ngFor=\"let toggler of togglers\">\n                        <span (click)=\"clickEvent(toggler)\">\n                        <i [ngClass]=\"toggler.status ? 'fas fa-toggle-on toggler-on' : 'fas fa-toggle-off toggler-off'\">\n                        </i>\n                        </span>\n            </span>\n        </ul>\n\n    </div>\n</div>\n"
 
 /***/ }),
 
@@ -863,6 +880,71 @@ var SettingsComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], SettingsComponent);
     return SettingsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/vk/vk.component.css":
+/*!*************************************!*\
+  !*** ./src/app/vk/vk.component.css ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/vk/vk.component.html":
+/*!**************************************!*\
+  !*** ./src/app/vk/vk.component.html ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div>\n    <button class=\"btn btn-outline-info\" (click)=\"getId()\">\n        <i class=\"fab fa-vk\"></i>\n    </button>\n\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/vk/vk.component.ts":
+/*!************************************!*\
+  !*** ./src/app/vk/vk.component.ts ***!
+  \************************************/
+/*! exports provided: VkComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VkComponent", function() { return VkComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var VkComponent = /** @class */ (function () {
+    function VkComponent() {
+    }
+    VkComponent.prototype.ngOnInit = function () {
+    };
+    VkComponent.prototype.getId = function () {
+    };
+    VkComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-vk',
+            template: __webpack_require__(/*! ./vk.component.html */ "./src/app/vk/vk.component.html"),
+            styles: [__webpack_require__(/*! ./vk.component.css */ "./src/app/vk/vk.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], VkComponent);
+    return VkComponent;
 }());
 
 

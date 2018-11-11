@@ -8,7 +8,6 @@ import {BaseChartDirective} from "ng2-charts-x";
 })
 export class ChartComponent { // lineChart
     @ViewChild("baseChart") chart: BaseChartDirective;
-    private ChartData: any = [{data: 0, label: 'X'}];
     public lineChartData: Array<any> = [
         {data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], label: 'Coffee'}
     ];

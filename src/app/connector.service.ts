@@ -16,8 +16,13 @@ export class ConnectorService {
     public getLatestHistoryData(id: number): Observable<any> {
         return this.http.get(`${environment.apiUrl}/coffeeshot?cameraId=${id}&count=${this.length}`);
     }
+
     public getLatest(): Observable<any> {
         return this.http.get(`${environment.apiUrl}/coffeeshot/latest`);
+    }
+
+    public getPrediction(): Observable<any> {
+        return this.http.get(`${environment.apiUrl}/coffeeshot/predict`);
     }
 
 }

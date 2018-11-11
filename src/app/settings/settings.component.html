@@ -4,8 +4,6 @@
         <ul>
             <span *ngFor="let toggler of togglers">
                         <span (click)="clickEvent(toggler)">
-
-
                         <i [ngClass]="toggler.status ? 'fas fa-toggle-on toggler-on' : 'fas fa-toggle-off toggler-off'">
                         </i>
                         </span>

@@ -1,0 +1,12 @@
+.indicator {
+    height: 90px;
+    margin: 0 0 0 234px;
+}
+
+.white-text {
+    color: white;
+    margin-left: 9px;
+    font-family: Nunito, serif;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
