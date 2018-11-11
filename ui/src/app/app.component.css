@@ -13,7 +13,7 @@
 
 .bg {
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     background-size: auto 120%;
     background: url("../assets/img/fon1.jpg") repeat-x;
 }
